@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="exibirMensagem()">Exibir Mensagem</button>
+    <button id="botao2">Exibir mensagem 2</button>
+    <input type="text" id="usuario" placeholder="Digite o username do GitHub">
+    <button onclick="procurar()">Procurar</button>
+        
+    <script>
+
+        function procurar(){
+            var username = document.getElementById('usuario').value
+            var xhttp = new XMLHttpRequest()
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.write('<pre>' + this.responseText + '</pre>')
+                }
+            }
+            xhttp.open("GET", "https://api.github.com/users/" + username, true)
+            xhttp.send()
+        }
+
+        function exibirMensagem() {
+            document.write('Evento disparado! <br>')
+            aguardarSegundos(2000, function(){
+                document.write('Outro mensagem! <br>')
+            })
+            document.write('evento finalizado! <br>')
+        }
+
+        function aguardarSegundos(time, callback){
+            setTimeout(callback, time)
+        }
+
+        document.getElementById("botao2").addEventListener("click", function(){
+            document.write('Clicou 2 - via evento!')
+        })
+
+    </script>
+</body>
+</html>
+
