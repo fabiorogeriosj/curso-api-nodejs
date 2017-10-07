@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tether.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Notes</title>
+</head>
+<body class="login">
+    
+    <h1>Anotações</h1>
+    <p>Controle suas anotações de forma simples e ágil!</p>
+
+    <form class="card form-login">
+        <div class="form-group">
+            <label>Nome</label>
+            <input id="nome" type="text" class="form-control" placeholder="Digite seu nome">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input id="email" type="text" class="form-control" placeholder="Digite seu email">
+        </div>
+        <div class="form-group">
+            <label>Senha</label>
+            <input id="senha" type="password" class="form-control" placeholder="Digite uma senha">
+          </div>
+          <button onclick="cadastrar()" type="button" class="btn btn-primary">Cadastrar</button>
+    </form>      
+    <p>
+        Já tem cadstro? <a href="/index.html">Clique aqui para logar.</a>
+    </p>
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/usuario.js"></script>
+</body>
+</html>

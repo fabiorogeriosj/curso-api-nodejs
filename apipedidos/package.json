@@ -1,0 +1,20 @@
+{
+  "name": "apipedidos",
+  "version": "1.0.0",
+  "description": "API de pedidos",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "moment": "^2.18.1",
+    "mongoose": "^4.11.13",
+    "mysql": "^2.14.1",
+    "nodemailer": "^4.1.2"
+  }
+}

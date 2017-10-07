@@ -1,0 +1,13 @@
+.form-login {
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+.login h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+.login p {
+    text-align: center;
+}
